@@ -14,6 +14,7 @@ class Tokenizer:
         # Latin (English) : A-Za-z
 
         pattern = r'[\u0900-\u097F]+|[A-Za-z]+|\d+|[.,!?।]|[\s]+'
+        # print(pattern,type(pattern))
         words = re.findall(pattern,self.text);
 
         wordsArray = [word for word in words if not word.isspace()] # Remove empty strings from the list
@@ -52,3 +53,8 @@ print(obj.encode())
 # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 print(obj.decode([1, 10, 11]))
 # Output: ['Hello', ',', 'this', 'is', 'a', 'test', '.', 'यह', 'एक', 'परीक्षण', 'है']
+
+obj2= Tokenizer("यहIam Nishant")
+print(obj2.separate())
+
+
