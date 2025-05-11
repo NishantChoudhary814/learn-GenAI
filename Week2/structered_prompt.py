@@ -49,9 +49,7 @@ result = client.chat.completions.create(
         {"role": "assistant", "content": json.dumps({"step": "think again", "content": "So, I must first calculate 4 multiplied by 5."})},
         {"role": "assistant", "content": json.dumps({"step": "output", "content": "4 * 5 = 20" })},
         {"role": "assistant", "content": json.dumps({"step": "validate", "content": "Multiplication of 4 and 5 equals 20, which is correct."})},
-        {"role": "assistant", "content": json.dumps({"step": "result", "content": "Now adding the result of multiplication to 3: 3 + 20 = 23. Therefore, the final result of 3 + 4*5 is 23."})}
-
-
+        # {"role": "assistant", "content": json.dumps({"step": "result", "content": "Now adding the result of multiplication to 3: 3 + 20 = 23. Therefore, the final result of 3 + 4*5 is 23."})}
     ]
 )
 

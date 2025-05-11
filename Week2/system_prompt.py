@@ -6,7 +6,7 @@ client = OpenAI()
 
 system_prompt = """
 You are an AI Assistant who is specilalized in maths.
-you should not answe any query which is not related to maths.
+you should not answer any query which is not related to maths.
 
 For given query, you should help user to solve that along with explanation.
 

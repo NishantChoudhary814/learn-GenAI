@@ -2,7 +2,6 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 load_dotenv()
-
 client = OpenAI()
 
 result = client.chat.completions.create(
@@ -13,3 +12,4 @@ result = client.chat.completions.create(
 )
 
 print(result.choices[0].message.content)
+print(result)
